@@ -5,17 +5,17 @@
         <title>Calculator</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <script src="cacl.js"></script>
     </head>
     <body>
-        <section class="px-16">
+        <section class="bg-violet-100 p-16 m-12">
             <div class="grid grid-cols-4 grid-rows-5 divide-x-8 divide-y-8 border-b-8 border-r-8">
 
-                <output class="col-span-3 bg-slate-300 border-l-8 border-t-8 h-16">
+                <output id="result" class="col-span-3 bg-slate-300 border-l-8 border-t-8 h-16">
                     
                 
                 </output>
-                <input type="button" value="C" onclick="dis('1')" class="bg-slate-300 hover:bg-slate-500 hover:text-white text-black">
+                <input id="clear" type="button" value="C" onclick="clearScreen()" class="bg-slate-300 hover:bg-slate-500 hover:text-white text-black">
               
                 </input>
                 <input type="button" value="1" onclick="dis('1')" class="bg-slate-300 hover:bg-slate-500 hover:text-white text-black">
@@ -60,7 +60,7 @@
                 <input type="button" value="." onclick="dis('.')" class="bg-slate-300 hover:bg-slate-500 hover:text-white text-black">
               
                 </input>
-                <input type="button" value="=" onclick="dis('1')" class="bg-slate-300 hover:bg-slate-500 hover:text-white text-black">
+                <input type="button" value="=" onclick="calculate('1')" class="bg-slate-300 hover:bg-slate-500 hover:text-white text-black">
               
                 </input>
                 <input type="button" value="+" onclick="dis('+')" class="bg-slate-300 hover:bg-slate-500 hover:text-white text-black">
